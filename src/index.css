@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 1s;
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 45%;
+  height: 70%;
+}
+
+.arrow {
+  width: 5%;
+  height: 10%;
+}
+
+.clockwise {
+  animation: clockwise 5s linear infinite;
+}
+
+.antiClockwise {
+  animation: antiClockwise 5s linear infinite;
+}
+
+@keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes antiClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
